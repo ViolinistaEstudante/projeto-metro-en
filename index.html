@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="reset-en.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="img/logo-metro.png">
@@ -23,15 +24,37 @@
     <!--- Cabeçalho --->
     <header class="cabeçalho">
         <img class="cabeçalho-imagem" src="img/logo-metro.png" alt="Logo do projeto Metro">
-        <div>
-            <a href="https://projetometro-ptbr.netlify.app/"><img src="img/brasil.png" alt="brasil"></a>
-            <a href="https://projetometro-en.netlify.app/"><img src="img/estadosunidos.png" alt="estadosunidos"></a>
-            <a href="https://projetometro-fr.netlify.app/"><img src="img/frança.png" alt="frança"></a>
-            <a href="https://projetometro-de.netlify.app/"><img src="img/alemanha.png" alt="alemanha"></a>
-        </div>
-        <nav>
+        <div class="custom-language-selector">
+            <button class="selector-button">
+              <img src="img/image.png" alt="Idioma">
+              <span>Select a language</span>
+            </button>
+            <ul class="language-options">
+              <li>
+                <a href="https://projetometro-ptbr.netlify.app/" data-lang="pt">
+                  <img src="img/brasil.png" alt="Português"> Português
+                </a>
+              </li>
+              <li>
+                <a href="https://projetometro-en.netlify.app/" data-lang="en">
+                  <img src="img/estadosunidos.png" alt="English"> English
+                </a>
+              </li>
+              <li>
+                <a href="https://projetometro-fr.netlify.app/" data-lang="fr">
+                  <img src="img/frança.png" alt="Français"> Français
+                </a>
+              </li>
+              <li>
+                <a href="https://projetometro-de.netlify.app/" data-lang="de">
+                  <img src="img/alemanha.png" alt="Deutsch"> Deutsch
+                </a>
+              </li>
+            </ul>
+          </div>
+        <nav>  
             <ul class="cabeçalho-lista">
-                <li class=""><a href="" class="ancora">Registration</a></li>
+                <li class=""><a href="https://forms.gle/JN8RvvW9qFb2bcVi7" class="ancora">Registration</a></li>
             </ul>
         </nav>
     </header>
@@ -128,8 +151,8 @@
                 <p>Check out some special moments from our project.</p>
             </div>
                 <div class="container-galeria">
-                    <div class="imagem-galeria"><img src="img/violino-imagem.jpg" alt="Violin 1"></div>
-                    <div class="imagem-galeria"><img src="img/violino-imagem.jpg" alt="Violin 2"></div>
+                    <div class="imagem-galeria"><img src="galeria/foto1-galeria.jpg" alt="Violin 1"></div>
+                    <div class="imagem-galeria"><img src="galeria/foto2-galeria.jpg" alt="Violin 2"></div>
                     <div class="imagem-galeria"><img src="img/violino-imagem.jpg" alt="Violin 3"></div>
                     <div class="imagem-galeria"><img src="img/violino-imagem.jpg" alt="Violin 4"></div>
                     <div class="imagem-galeria"><img src="img/violino-imagem.jpg" alt="Violin 5"></div>
@@ -143,29 +166,65 @@
             </section>
 
 
-        <!--- Nossa equipe --->
-        <section class="equipe">
+        <!-- Nossa equipe -->
+        <section class="equipe-container">
             <div class="titulo-equipe">
-                <h2>Our Team!</h2>
+                <h2>Our team!</h2>
             </div>
-            <article class="apresentacao-equipe">
-                <div class="imagem-equipe">
-                    <img src="" alt="Foto de uma pessoa de terno">
+            <div class="equipe-scroll-wrapper">
+                <div class="equipe">
+                    <article class="apresentacao-equipe">
+                        <div class="imagem-equipe">
+                            <img src="img/andré.jpg" alt="André Ed Santos">
+                        </div>
+                        <div class="textos-equipe">
+                            <h3>André Ed Santos</h3>
+                            <h4>metro project</h4>
+                        </div>
+                    </article>
+                    <article class="apresentacao-equipe">
+                        <div class="imagem-equipe">
+                            <img src="img/brendow.png" alt="Brendow Rodrigues">
+                        </div>
+                        <div class="textos-equipe">
+                            <h3>Brendow Rodrigues</h3>
+                            <h4>Web Developer</h4>
+                        </div>
+                    </article>
+                    <article class="apresentacao-equipe">
+                        <div class="imagem-equipe">
+                            <img src="img/mario.jpg" alt="Mario Dietsch">
+                        </div>
+                        <div class="textos-equipe">
+                            <h3>Mario Dietsch</h3>
+                            <h4>metro project</h4>
+                        </div>
+                    </article>
+                    <article class="apresentacao-equipe">
+                        <div class="imagem-equipe">
+                            <img src="img/noémie.jpg" alt="Noémie Platz">
+                        </div>
+                        <div class="textos-equipe">
+                            <h3>Noémie Platz</h3>
+                            <h4>metro project</h4>
+                        </div>
+                    </article>
+                    <article class="apresentacao-equipe">
+                        <div class="imagem-equipe">
+                            <img src="img/fernando.jpg" alt="Fernando Neubauer">
+                        </div>
+                        <div class="textos-equipe">
+                            <h3>Fernando Neubauer</h3>
+                            <h4>metro project</h4>
+                        </div>
+                    </article>
                 </div>
-                <div class="textos-equipe">
-                    <h3>André Sobrenome</h3>
-                    <h4>Owner METRO project</h4>
-                </div>
-            </article>
-            <article class="apresentacao-equipe">
-                <div class="imagem-equipe">
-                    <img src="img/brendow-equipe.jpeg" alt="Foto de uma pessoa de terno">
-                </div>
-                <div class="textos-equipe">
-                    <h3>Brendow Rodrigues</h3>
-                    <h4>Web Developer</h4>
-                </div>
-            </article>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-dot active"></span>
+                <span class="scroll-dot"></span>
+                <span class="scroll-dot"></span>
+            </div>
         </section>
 
         <!--- Bloco para inscrição --->
@@ -187,9 +246,19 @@
     <script src="script.js"></script>
 
     <!--- Footer --->
-    <footer>
-        All rights reserved to METRO - &copy; 2025
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="copyright">All rights reserved to METRO - &copy; <span id="year">2025</span></p>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-snapchat"></i></a>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>
